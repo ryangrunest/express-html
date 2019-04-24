@@ -1,0 +1,24 @@
+{
+  "name": "express-html",
+  "version": "1.0.0",
+  "description": "Send html files with express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryangrunest/express-html.git"
+  },
+  "author": "Ryan Grunest",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryangrunest/express-html/issues"
+  },
+  "homepage": "https://github.com/ryangrunest/express-html#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4"
+  }
+}
