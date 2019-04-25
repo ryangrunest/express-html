@@ -5,6 +5,11 @@ const app = express();
 const port = process.env.PORT || 8080;
 const host = 'localhost';
 
+// serve the public folder to allow assets
+app.use(express.static('public'));
+
+app.set('view engine', 'ejs');
+
 app.get('/', (req,res) => {
   // res.send('<h1>banana</h1>');
   res.render('index.ejs');
@@ -24,7 +29,7 @@ app.get('/posts', (req, res) =>  {
       title: 'My adorable pet bunny',
       author: 'Chuck'
     }, {
-      title: 'Can you beleive this Pomsky?',
+      title: 'Can you beleive this frenchie?',
       author: 'Ryguy'
     }
   ];
