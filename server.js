@@ -15,5 +15,21 @@ app.get('/fallinlovewith/:thing', (req,res) => {
   res.render('love.ejs', { thingVar: thing });
 })
 
+app.get('/posts', (req, res) =>  {
+  const posts = [
+    {
+      title: 'Post 1',
+      author: 'Susie'
+    }, {
+      title: 'My adorable pet bunny',
+      author: 'Chuck'
+    }, {
+      title: 'Can you beleive this Pomsky?',
+      author: 'Ryguy'
+    }
+  ];
+  res.render('posts.ejs', {posts: posts});
+})
+
 
 app.listen(port, host, () => { console.log('server now listening') });
